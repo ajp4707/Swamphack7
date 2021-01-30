@@ -49,7 +49,7 @@ for (var i = 0; i < elements.length; i++) {
 
 var nounlistcopy = ['Dummy'];
 for (var i = 0; i < nounlist.length; i++)
-	nounlistcopy.push(nounlist);
+	nounlistcopy.push(nounlist[i]);
 shuffle(nounlist);
 
 //Second loop replaces the nouns
