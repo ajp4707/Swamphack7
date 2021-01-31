@@ -56,16 +56,13 @@ for (var i = 0; i < keys.length; i++){
 	var multiArr = posDict[keys[i]];
 	shuffle(multiArr[2]);
 	console.log(multiArr[0].length);
-	console.log("Replacing elems now");
 	for (var j = 0; j < multiArr[0].length; j++)
 	{
 		var node2 = multiArr[1][j];
 		var text = node2.nodeValue;
 		var replacedText = text.replace(multiArr[0][j],  multiArr[2][j].toUpperCase());
+		node2.replaceWith(document.createTextNode(replacedText));
 		
-		if (replacedText !== text) {
-	        node2.replaceWith(document.createTextNode(replacedText));
-		}
 	}
 }
 },{"wink-pos-tagger":21}],2:[function(require,module,exports){
