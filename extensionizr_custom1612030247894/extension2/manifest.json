@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Banana2",
+    "description": "[your extension description here]",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "bundle.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
