@@ -1,6 +1,7 @@
 {
 "manifest_version": 2,
-    "name": "Banana2",
+
+    "name": "banana",
     "description": "[your extension description here]",
     "version": "1.0",
     "content_scripts": [

@@ -2,7 +2,7 @@ function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+  while (currentIndex) {
 
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
@@ -66,4 +66,5 @@ for (var i = 0; i < nounlist.length; i++)
 	var replacedText = text.replace(nounlist[i], nounlistshuffled[i]);
 	if (replacedText !== text) 
         node2.replaceWith(document.createTextNode(replacedText));
+
 }
