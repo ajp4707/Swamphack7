@@ -44,7 +44,7 @@ for (var i = 0; i < elements.length; i++)
 	        var arr = tagger.tagSentence(text);
 	        console.log("Tagger found:")
 	        console.log(arr);
-	        for (var k = 0; k < arr.length && nounlist.length <= 300; k++){
+	        for (var k = 0; k < arr.length && nounlist.length <= 500; k++){
 	        	if (arr[k].pos === "NN" || arr[k].pos === "NNP" || arr[k].pos === "NNS"){
 	        		nounlist.push(arr[k].value);
 	        		nodelist.push(node);
